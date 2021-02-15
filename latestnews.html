@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NASA - Journey to Space</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="media/logo.ico">
+  <link href="css/programs.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header id="header" class="rutenett">
+      <img id="logo" alt="NASA logo" src="media/nasalogo.png"></img>
+      <a id="openNav">	&#9776;</a>
+      <nav id="nav">
+        <a id="closeNav">&#10006;</a>
+        <a href="index.html">HOME</a>
+        <a href="latestnews.html">NEWS</a>
+        <a href="about.html">ABOUT NASA</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+      <h1 class="sectionheading">LATEST NEWS</h1>
+  </header>
+
+  <main>
+    <section>
+        <div class="latestNews">
+          <img alt="Loader image" id="loader" src="media/spinner.png"></img>
+        </div>
+        Check out NASA's official live stream <a target="_blank" href="https://www.nasa.gov/nasalive">here!</a>
+    </section>
+  </main>
+
+  <footer>
+      <section id="footer" class="rutenett">
+          <section class="kol-4">
+              <label for="email">Sign up to our newsletter today!</label>
+              <br>
+              <input id="email" type="email" placeholder="Enter your email"></input>
+              <button type="submit">Sign up</button>
+          </section>
+          <section id="contact" class="kol-4">
+            Contact
+            <p>example@email.com</p>
+            <section>
+              <a href="https://www.instagram.com/nasa/?hl=nb" target="_blank">
+                  <img alt="Instagram icon" class="smIcon" src="media/png/ig.png"></img>
+              </a>
+              <a href="https://twitter.com/nasa" target="_blank">
+                  <img alt="Twitter icon" class="smIcon" src="media/png/twitter.png"></img>
+              </a>
+              <a href="https://www.facebook.com/NASA/" target="_blank">
+                  <img alt="Facebook icon" class="smIcon" src="media/png/fb.png"></img>
+              </a>
+            </section>
+          </section>
+          <section class="kol-4">
+            Latest updates
+            <div id="newsBox">
+            </div>
+          </section>
+      </section>
+  </footer>
+
+  <script src="js/programs.js"></script>
+</body>
+</html>

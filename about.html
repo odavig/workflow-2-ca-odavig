@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NASA - Journey to Space</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="media/logo.ico">
+  <link href="css/about.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header id="header" class="rutenett">
+      <img id="logo" alt="NASA logo" src="media/nasalogo.png"></img>
+      <a id="openNav">	&#9776;</a>
+      <nav id="nav">
+        <a id="closeNav">&#10006;</a>
+        <a href="index.html">HOME</a>
+        <a href="latestnews.html">PROGRAMS</a>
+        <a href="about.html">ABOUT NASA</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+      <h1 class="sectionheading">ABOUT NASA</h1>
+  </header>
+
+  <main>
+    <section class="section">
+        <section class="rutenett">
+            <p id="wikipediaText" class="sectionParagraph"><img alt="Loader image" id="loader" src="media/spinner.png"></img></p>
+            <img alt="Picture of the Kennedy space center logo" id="kennedyLogo" src="media/kennedyspacecenter.png"></img>
+        </section>
+
+        <section id="aboutExtraContent" class="rutenett">
+          <img alt="Picture of a rocket launch" id="rocketImg" src="media/backgroundabout.png"></img>
+            <h2 class="sectionSubHeading kol-12">Creation</h2>
+            <p class="sectionParagraph">"NASA was created in response to the Soviet Union’s October 4, 1957 launch of its first satellite, Sputnik I. The 183-pound, basketball-sized satellite orbited the earth in 98 minutes. The Sputnik launch caught Americans by surprise and sparked fears that the Soviets might also be capable of sending missiles with nuclear weapons from Europe to America. The United States prided itself on being at the forefront of technology, and, embarrassed, immediately began developing a response, signaling the start of the U.S.-Soviet space race."</p>
+            <h2 class="sectionSubHeading kol-12">Leadership</h2>
+            <p class="sectionParagraph">"James Frederick “Jim” Bridenstine was nominated by President Donald Trump, confirmed by the U.S. Senate, and sworn in as NASA’s 13th administrator on April 23, 2018. Bridenstine was elected in 2012 to represent Oklahoma’s First Congressional District. In Congress he served on the Armed Services Committee and the Science, Space and Technology Committee. Bridenstine’s career in federal service began in the U.S. Navy, flying the E-2C Hawkeye off the USS Abraham Lincoln aircraft carrier. He flew combat missions in Iraq and Afghanistan and accrued most of his 1,900 flight hours and 333 carrier-arrested landings."</p>
+        </section>
+    </section>
+  </main>
+
+  <footer>
+      <section id="footer" class="rutenett">
+          <section class="kol-4">
+            <label for="email">Sign up to our newsletter today!</label>
+              Sign up to our newsletter today!
+              <br>
+              <input id="email" type="email" placeholder="Enter your email"></input>
+              <button type="submit">Sign up</button>
+          </section>
+          <section id="contact" class="kol-4">
+            Contact
+            <p>example@email.com</p>
+            <section>
+              <a href="https://www.instagram.com/nasa/?hl=nb" target="_blank">
+                  <img alt="Instagram icon" class="smIcon" src="media/png/ig.png"></img>
+              </a>
+              <a href="https://twitter.com/nasa" target="_blank">
+                  <img alt="Twitter icon" class="smIcon" src="media/png/twitter.png"></img>
+              </a>
+              <a href="https://www.facebook.com/NASA/" target="_blank">
+                  <img alt="Facebook icon" class="smIcon" src="media/png/fb.png"></img>
+              </a>
+            </section>
+          </section>
+          <section class="kol-4">
+            Latest updates
+            <div id="newsBox">
+            </div>
+          </section>
+      </section>
+  </footer>
+
+  <script src="js/about.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+.rutenett {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.kol-1, .kol-2, .kol-3, .kol-4, .kol-5, .kol-6, .kol-7, .kol-8, .kol-9, .kol-10, .kol-11, .kol-12{
+  grid-column: span 12;
+}
+
+@media (min-width: 768px) {
+  .kol-1, .kol-2, .kol-3, .kol-4, .kol-5, .kol-6 {
+    grid-column: span 6;
+  }
+
+  .kol-7, .kol-8, .kol-9, .kol-10, .kol-11, .kol-12 {
+    grid-column: 12;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .kol-1 {
+    grid-column: span 1;
+  }
+
+  .kol-2 {
+    grid-column: span 2;
+  }
+
+  .kol-3 {
+    grid-column: span 3;
+  }
+
+  .kol-4 {
+    grid-column: span 4;
+  }
+
+  .kol-5 {
+    grid-column: span 5;
+  }
+
+  .kol-6 {
+    grid-column: span 6;
+  }
+
+  .kol-7 {
+    grid-column: span 7;
+  }
+
+  .kol-8 {
+    grid-column: span 8;
+  }
+
+  .kol-9 {
+    grid-column: span 9;
+  }
+
+  .kol-10 {
+    grid-column: span 10;
+  }
+
+  .kol-11 {
+    grid-column: span 11;
+  }
+
+  .kol-12 {
+    grid-column: span 12;
+  }
+}

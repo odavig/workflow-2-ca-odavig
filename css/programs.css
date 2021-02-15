@@ -1,0 +1,259 @@
+body {
+  margin: 0px;
+  background-color: #000B19;
+  color: white;
+}
+
+/********************* header *********************/
+
+header {
+  background-position: 50% 30%;
+  transition: 0.3s;
+  padding: 2px;
+  background-image: url(../media/hubble-telescope.jpg);
+  height: 250px;
+  background-size: cover;
+  background-position: 50% 70%;
+  grid-row-gap: 80px;
+}
+
+#logo {
+  width: 70%;
+  margin: 3%;
+  cursor: pointer;
+}
+
+header nav {
+  grid-column: 5/13;
+  text-align: right;
+  margin-top: 1.5em;
+}
+
+nav a {
+  margin: 2%;
+  color: #bfbfbf;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 130%;
+}
+
+nav a:hover {
+  color: #033A92;
+}
+
+.sectionheading {
+  color: #B3B3B3;
+  margin: 0px;
+  font-size: 250%;
+  text-align: left;
+  letter-spacing: 0.3em;
+  margin-bottom: 5%;
+  height: 200px;
+  font-family: "Helvetica Neue";
+  grid-column: 3/8;
+}
+
+#openNav {
+  display: none;
+}
+
+#closeNav {
+  display: none;
+}
+
+/********************* main *********************/
+main {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+}
+
+main a {
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+}
+
+.sectionSubHeading {
+  color: #FF0000;
+  text-align: left;
+  font-size: 180%;
+  margin: 0px;
+  margin-top: 5%;
+  line-height: 1em;
+}
+
+.latestNews {
+  margin-top: 0;
+  letter-spacing: 0.2em;
+  font-weight: lighter;
+  font-size: 18px;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+.latestNews li {
+  list-style: none;
+}
+
+.latestNews ul {
+  padding: 0;
+}
+
+.latestNews a {
+  text-decoration: none;
+  color: grey;
+}
+
+#loader {
+  animation-name: loading;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+}
+
+/********************* footer *********************/
+footer {
+  margin-top: 10%;
+  background-image: url(../media/jorden.jpg);
+  background-size: cover;
+  font-family: "Helvetica Neue";
+  font-weight: lighter;
+  font-size: 27px;
+  letter-spacing: 0.3em;
+  padding: 5% 5% 2% 5%;
+  background-position: 50% 30%;
+}
+
+#footer {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#footer p {
+  font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+}
+
+input {
+  margin-top: 5%;
+  font-family: "Helvetica Neue";
+  padding: 3%;
+  border: none;
+}
+
+#footer button {
+  border: none;
+  font-family: "Helvetica Neue";
+  padding: 3% 4% 3% 4%;
+  background-color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#footer button:hover {
+  background-color: #0B3D91;
+  color: white;
+}
+
+.smIcon {
+  width: 10%;
+  cursor: pointer;
+}
+
+#contact a {
+  text-decoration: none;
+  margin: 2%;
+}
+
+#newsBox {
+  font-size: 80%;
+  width: 100%;
+}
+
+#newsBox h4 {
+  font-weight: lighter;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+#newsBox li {
+  list-style: none;
+  font-size: 13px;
+}
+
+#newsBox a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 0.1em;
+}
+
+#newsBoxLink {
+  margin-top: 5%;
+}
+
+#newsBox ul {
+  padding: 0px;
+}
+
+/* Bredere skjermer enn 768px */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    line-height: 3em;
+    font-size: 30px;
+    font-family: "Helvetica";
+    color: darkgrey;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    transition: 0.3s;
+    overflow: hidden;
+    right: 0px;
+  }
+
+  #openNav {
+    display: block;
+    font-size: 20px;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+  }
+
+  #closeNav {
+    display: block;
+  }
+
+  .sectionheading {
+    margin-top: 10%;
+  }
+
+  main {
+    margin: 5%;
+  }
+
+}
+
+/* Bredere skjermer enn 1024px */
+@media (min-width: 1024px) {
+}

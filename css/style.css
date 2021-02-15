@@ -1,0 +1,445 @@
+body {
+  margin: 0px;
+  background-color: black;
+  color: white;
+}
+/*
+ * DRY (Do not repeat yourself)
+ * find common styles place them in one main css file and include that in each page.
+ * its great to component specific files like grid.css and page specific programms.css make sure not include the common css in those.
+ * */
+/********************* header *********************/
+
+header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+#logo {
+  width: 70%;
+  margin: 3%;
+  cursor: pointer;
+}
+
+header nav {
+  grid-column: 5/13;
+  text-align: right;
+  margin-top: 1.5em;
+}
+
+nav a {
+  margin: 2%;
+  color: #bfbfbf;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 130%;
+}
+
+nav a:hover {
+  color: #033A92;
+}
+
+#openNav {
+  display: none;
+}
+
+#closeNav {
+  display: none;
+}
+
+/********************* banner *********************/
+
+#banner {
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#bannerText {
+  color: #bfbfbf;
+  font-family: 'Gudea', sans-serif;
+  margin-top: 17%;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#bannerText h1 {
+  margin: 0px;
+  color: white;
+  font-size: 64px;
+  letter-spacing: 0.2em;
+}
+
+#bannerText q {
+  margin: 0px;
+  color: #ED462F;
+  font-family: 'Helvetica Neue';
+  font-style: italic;
+  font-size: 35px;
+}
+
+.bannerBtn {
+  color: #bfbfbf;
+  padding: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  cursor: pointer;
+}
+
+#ctaBanner {
+  margin-top: 17%;
+}
+
+#ctaBanner a {
+  margin: 5%;
+  background-color: #0B3D91;
+  text-decoration: none;
+  font-size: 120%;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+#ctaBanner a:hover {
+  background-color: #093177;
+}
+
+/********************* history *********************/
+
+#history {
+  font-family: 'Helvetica';
+  font-size: 200%;
+  background-image: url(../media/jorden.jpg);
+  background-size: cover;
+  margin-bottom: 2%;
+  height: 100vh;
+  display: none;
+}
+
+#history div{
+  text-align: center;
+  font-size: 70%;
+  grid-column-gap: 5%;
+  letter-spacing: 2px;
+}
+
+#history p {
+  overflow-y: scroll;
+  max-height: 200px;
+}
+
+.sectionheading {
+  color: #B3B3B3;
+  margin: 0px;
+  margin-top: 10%;
+  font-size: 250%;
+  text-align: left;
+}
+
+.sectionCmt {
+  color: #FF0000;
+  margin: 0px;
+  margin-bottom: 7%;
+  text-align: left;
+  font-size: 150%;
+}
+
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+.sectionParagraph {
+  transition: 0.3s;
+}
+
+.sectionParagraph h3 {
+  font-size: 200%;
+  margin: 0px;
+}
+
+.sectionParagraph h4 {
+  color: #FF0000;
+  font-size: 170%;
+  margin: 0px;
+  margin-bottom: 10%;
+}
+
+.sectionParagraph:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sectionParagraph a {
+  text-decoration: none;
+  color: #0B3D91;
+}
+
+/********************* info *********************/
+
+#info {
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  display: none;
+}
+
+#info p {
+  margin: 0px;
+  font-family: "Helvetica Neue";
+  font-weight: 300;
+  font-style: italic;
+}
+
+/********************* next slide *********************/
+
+#changeSlide {
+  position: fixed;
+  left: 85%;
+  width: 200px;
+  bottom: 27px;
+  display: none;
+}
+
+.changeSlideBtn {
+  margin: 5%;
+  background-color: #212121;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+  font-weight: bold;
+  color: white;
+  border: none;
+  color: #bfbfbf;
+  padding: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  cursor: pointer;
+}
+
+.changeSlideBtn:hover {
+  background-color: #093177;
+}
+
+/********************* moon *********************/
+#apollo {
+  display: none;
+}
+
+#apollo a {
+  text-decoration: none;
+  color: #0B3D91;
+}
+
+#moonImg {
+  height: 100vh;
+}
+
+#apolloText {
+  font-family: 'Helvetica Neue';
+  grid-column: 8/12;
+  margin-top: 30%;
+  text-align: right;
+}
+
+#apolloText h2 {
+  text-align: right;
+}
+
+#apolloText h4 {
+  text-align: right;
+}
+
+.sectionText {
+  font-weight: lighter;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+
+#apolloImgSec {
+  grid-column: 1/7;
+}
+
+#apollo p {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+/********************* hubble *********************/
+
+#hubble {
+  display: none;
+  font-family: 'Helvetica';
+  font-size: 200%;
+  background-image: url(../media/hubble.jpg);
+  background-size: cover;
+  margin-bottom: 2%;
+  height: 100vh;
+}
+
+#hubble div{
+  font-size: 70%;
+  grid-column-gap: 5%;
+  letter-spacing: 2px;
+  text-align: right;
+}
+
+#hubbleText {
+  grid-column: 9/14;
+}
+
+#hubble h2 {
+  margin-bottom: 7%;
+}
+
+/********************* ongoing *********************/
+
+#ongoing {
+  display: none;
+  font-family: 'Helvetica';
+  font-size: 200%;
+  background-image: url(../media/mooncloseup.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 2%;
+  height: 100vh;
+}
+
+#ongoing div{
+  text-align: center;
+  font-size: 70%;
+  grid-column-gap: 5%;
+  letter-spacing: 2px;
+}
+
+#ongoing h4 {
+  margin-bottom: 10%;
+}
+
+#ongoing p {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+/********************* animations *********************/
+@keyframes fadeInPage {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.fadeInPage {
+  animation-name: fadeInPage;
+  animation-duration: 0.3s;
+}
+
+/* Bredere skjermer enn 768px */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    line-height: 3em;
+    font-size: 30px;
+    font-family: "Helvetica";
+    color: darkgrey;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    transition: 0.3s;
+    overflow: hidden;
+    right: 0px;
+  }
+
+  #openNav {
+    display: block;
+    font-size: 20px;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+  }
+
+  #closeNav {
+    display: block;
+  }
+
+
+  #ctaBanner a {
+    display: block;
+    font-size: 100%;
+  }
+
+  #banner {
+    height: 100vh;
+  }
+
+  #bannerText h1 {
+    font-size: 50px;
+  }
+
+  #ctaBanner {
+    margin-top: 40%;
+  }
+
+  #changeSlide {
+    position: relative;
+    left: auto;
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  #sectionText {
+    padding: 2%;
+  }
+
+  #apolloText {
+    margin-top: 0%;
+    grid-column: 7/12
+  }
+
+  #apolloImgSec {
+    overflow:hidden;
+  }
+
+  .sectionheading {
+    font-size: 200%;
+  }
+
+  #apollo p {
+    max-height: 400px;
+  }
+
+  .sectionText {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+
+  #hubbleText {
+    grid-column: 1/12;
+  }
+
+  #ongoing {
+    background-position-y: bottom;
+    height: 100%;
+  }
+
+  .sectionParagraph {
+    margin-top: 10%;
+  }
+}
+
+/* Bredere skjermer enn 1024px */
+@media (min-width: 1024px) {
+}

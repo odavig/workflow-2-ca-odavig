@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NASA - Journey to Space</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="media/logo.ico">
+  <link href="css/contact.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header id="header" class="rutenett">
+      <img id="logo" alt="NASA logo" src="media/nasalogo.png"></img>
+      <a id="openNav">	&#9776;</a>
+      <nav id="nav">
+        <a id="closeNav">&#10006;</a>
+        <a href="index.html">HOME</a>
+        <a href="latestnews.html">PROGRAMS</a>
+        <a href="about.html">ABOUT NASA</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+  </header>
+
+  <main id="main" class="rutenett">
+    <section id="contactBackgroundSec">
+      <h1 class="sectionheading">CONTACT</h1>
+      <p>Do you have some questions?
+        <br>
+        We'd love to help!
+      </p>
+      <ul>
+          <li>
+            <a href="https://www.instagram.com/nasa/?hl=nb" target="_blank">
+                <img alt="Instagram icon" class="smIcon" src="media/png/ig.png"></img>
+                Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/nasa" target="_blank">
+                <img alt="Twitter icon" class="smIcon" src="media/png/twitter.png"></img>
+                Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/NASA/" target="_blank">
+                <img alt="Facebook icon" class="smIcon" src="media/png/fb.png"></img>
+                Facebook
+            </a>
+          </li>
+      </ul>
+    </section>
+    <section id="contactFormSec">
+      <form id="contactForm">
+        <label for="nameInput">What's your name?</label>
+        <br>
+        <input id="nameInput" class="input" type="text"></input>
+        <p id="nameError" class="error">Please type in your name</p>
+        <br>
+        <label for="emailInput">What's your email?</label>
+        <br>
+        <input id="emailInput" class="input" type="email"></input>
+        <p id="emailError" class="error">Please type in your email</p>
+        <br>
+        <label for="messageInput">Tell us your message</label>
+        <br>
+        <textarea id="messageInput"></textarea>
+        <p id="messageError" class="error">Please type in your message</p>
+        <br>
+        <button id="contactBtn" type="submit">Thank you!</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>

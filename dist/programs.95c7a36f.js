@@ -142,7 +142,12 @@ function handleNewsJson(json) {
   });
 
   function handleNewsJsonAgain(json) {
+<<<<<<< Updated upstream
     var results = json.project;
+=======
+    var results = json.project; // variable name results if ok, but if we optimise for readability a nicer var name could be: nasaProject, projectNasa
+
+>>>>>>> Stashed changes
     console.log(results);
     latestNews.style.textAlign = "left";
     var newHtml = "\n  <h4>".concat(results.title, "</h4>\n  <ul>\n    <li>").concat(results.status, " // then in here we can say ").concat(nasaProject.status, " </li>\n    <li>").concat(results.endDate, "</li>\n    <li id=\"newsBoxLink\"><a href=\"").concat(results.website, "\">Click here to read more</a></li>\n  </ul>\n  ");

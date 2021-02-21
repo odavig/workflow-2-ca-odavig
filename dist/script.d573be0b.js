@@ -118,6 +118,48 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/script.js":[function(require,module,exports) {
+<<<<<<< Updated upstream
+=======
+/*
+* OK, time for something NEW...
+*
+* you may self destruct these comments when you have completed the challenge 🕹 if you choose to accept 🤖
+*
+* you can code! :-) no doubt.
+* SOOOoooo now to take things to next level, lets talk Design Patterns.
+* Which we will cover more in next semester, but as i always say "there is no time like the present" so here we go
+*
+* I want you to think of you code as modules and in also in a functional way. think of all the different peices of code you have and break them down into single purpose functions(where possible).
+*
+* Design Pattern 1
+* The revealing module pattern
+*
+* The basic idea is you can without having to use ES6 module imports or requires and bundlers (because they are not yet fully supported in ALL browsers yet (IE10,11...)),
+* you can have code that is broken down into modules and nicely encapsulated in one blobal "app" object namespaced to your website or app or section of app.
+*
+* - take charge of global variables, create encapsulation
+* - break up you code modules,
+* - these modules can be single purpose functions, or multiple functions that are related to one feature exporeted as an object.
+* - these functions can be re-usable
+* - functions that you will be able to call from any where in your app
+*   A minimal code example: https://github.com/mannuelf/js-scratch-pad/tree/master/src/revealing-module-pattern
+*   - in my example i have app , but I could have called it whatever
+*   - I have a generic fetch function doing the API call, if I were smarter I would make it so generic that I can call that method from any module and return what ever data I asked of it via the argument passed in (api endpoint url)
+*   - it creates nice closures so you dont have global variables, it will give you a sense of organistaion, control.
+*
+*   so in our checkout app at superbalist we had modules like:
+*   - addreess.js
+*   - googlemaps.js
+*   - returns.js
+*   - forms.js
+*   ..etc
+*
+*   hopefully you can see the benefit, now this is great for vanilla js apps like this one you built, no react/vue/insert-framework.
+*
+* Now there is much more to this pattern than I have explained here and demo'd  ☝️  there of course:
+* some light reading: https://addyosmani.com/resources/essentialjsdesignpatterns/book/
+*/
+>>>>>>> Stashed changes
 var start = document.querySelector("#start");
 var banner = document.querySelector("#banner");
 var bannerText = document.querySelector("#bannerText");

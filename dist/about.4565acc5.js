@@ -122,6 +122,10 @@ var url = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exsente
 
 var wikipediaText = document.querySelector("#wikipediaText");
 fetch(url).then(function (response) {
+<<<<<<< Updated upstream
+=======
+  // convert to arrow function, we can use it here because we dont really need access to the "this" keyword.
+>>>>>>> Stashed changes
   return response.json();
 }).then(function (json) {
   handleJson(json);
@@ -130,8 +134,15 @@ fetch(url).then(function (response) {
 });
 
 function handleJson(json) {
+<<<<<<< Updated upstream
   var results = json.query.pages;
   var source = " <i> Information about NASA gotten from https://en.wikipedia.org/wiki/NASA </i>";
+=======
+  // handleJson as a function name is ok. A better name could be fetchWikiPediaText, or if thats to specific because its a utility function to be used many times over: getWikis, getWikik.
+  var results = json.query.pages;
+  var source = " <i> Information about NASA gotten from https://en.wikipedia.org/wiki/NASA </i>";
+  console.log(results); // always delete console logs, do not ship logs to production, it slows server down.
+>>>>>>> Stashed changes
 
   for (var i = 0; i < results.length; i++) {
     newHtml = results[i].extract;
@@ -171,7 +182,12 @@ function handleNewsJson(json) {
     console.log(results);
     var newHtml = "\n  <h4>".concat(results.title, "</h4>\n  <ul>\n    <li>").concat(results.status, "</li>\n    <li>").concat(results.endDate, "</li>\n    <li id=\"newsBoxLink\"><a href=\"").concat(results.website, "\">Click here to read more</a></li>\n  </ul>\n  ");
     newsBox.innerHTML = newHtml;
+<<<<<<< Updated upstream
   }
+=======
+  } // use pretteir, code formatter to autoindent the file.
+
+>>>>>>> Stashed changes
 }
 
 function handleNewsError() {
@@ -184,9 +200,16 @@ var nav = document.querySelector("#nav");
 var header = document.querySelector("#header");
 var sectionheading = document.querySelector(".sectionheading");
 openNav.addEventListener("click", openNavFunc);
+<<<<<<< Updated upstream
 closeNav.addEventListener("click", closeNavFunc);
 
 function openNavFunc() {
+=======
+closeNav.addEventListener("click", closeNavFunc); // really happy to see small single purpose functions, well done.
+
+function openNavFunc() {
+  // Func? openNavigation is a fine name. it is a function you are writing so having the Func in the name is redundent
+>>>>>>> Stashed changes
   nav.style.display = "block";
   header.style.backgroundColor = "white";
   header.style.backgroundImage = "none";

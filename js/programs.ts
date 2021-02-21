@@ -1,3 +1,6 @@
+import { openNav } from './components/nav'
+openNav()
+
 const newsUrl = "https://api.nasa.gov/techport/api/projects?api_key=s1t0dgdnK3sCldGLGkOSNrGW7Oe7hbLd7VwTs44M"
 
 fetch(newsUrl)
@@ -16,9 +19,9 @@ function handleNewsJson(json) {
 
   console.log(results[0].id)
 
-  const newsUrl = `https://api.nasa.gov/techport/api/projects/${results[0].id}?api_key=s1t0dgdnK3sCldGLGkOSNrGW7Oe7hbLd7VwTs44M`
-  const newsBox = document.querySelector("#newsBox")
-  const latestNews = document.querySelector(".latestNews")
+  const newsUrl = `https://api.nasa.gov/techport/api/projects/${results[0].id}?api_key=s1t0dgdnK3sCldGLGkOSNrGW7Oe7hbLd7VwTs44M`;
+  const newsBox = <HTMLElement>(document.querySelector("#newsBox"));
+  const latestNews = <HTMLElement>(document.querySelector(".latestNews"))
 
   fetch(newsUrl)
       .then(function(response) {
@@ -32,7 +35,7 @@ function handleNewsJson(json) {
       });
 
 function handleNewsJsonAgain(json) {
-const results = json.project // variable name results if ok, but if we optimise for readability a nicer var name could be: nasaProject, projectNasa
+const results = json.project
   console.log(results)
 
   latestNews.style.textAlign = "left"
@@ -40,7 +43,7 @@ const results = json.project // variable name results if ok, but if we optimise 
   const newHtml = `
   <h4>${results.title}</h4>
   <ul>
-    <li>${results.status} // then in here we can say ${nasaProject.status} </li>
+    <li>${results.status} </li>
     <li>${results.endDate}</li>
     <li id="newsBoxLink"><a href="${results.website}">Click here to read more</a></li>
   </ul>
@@ -61,31 +64,8 @@ const results = json.project // variable name results if ok, but if we optimise 
 
 }
 
-function handleNewsError() {
-  console.log("error.html")
+function handleNewsError(error) {
+  console.log(error)
 }
 
-const openNavBtn = document.querySelector("#openNav")
-const closeNavBtn = document.querySelector("#closeNav")
-const nav = document.querySelector("#nav")
-const header = document.querySelector("#header")
 const sectionheading = document.querySelector(".sectionheading")
-
-openNav.addEventListener("click", openNavFunc)
-closeNav.addEventListener("click", closeNavFunc)
-
-function openNavFunc() {
-  nav.style.display  = "block"
-  header.style.backgroundColor = "white"
-  header.style.backgroundImage = "none"
-  header.style.height = "100vh"
-  sectionheading.style.display = "none"
-}
-
-function closeNavFunc() {
-  nav.style.display  = "none"
-  header.style.backgroundColor = "transparent"
-  sectionheading.style.display = "block"
-  header.style.backgroundImage = "url(media/hubble-telescope.jpg)"
-  header.style.height = "250px"
-}

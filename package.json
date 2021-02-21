@@ -1,0 +1,33 @@
+{
+  "name": "workflow-2-ca-odavig",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odavig/workflow-2-ca-odavig.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/odavig/workflow-2-ca-odavig/issues"
+  },
+  "homepage": "https://github.com/odavig/workflow-2-ca-odavig#readme",
+  "dependencies": {
+    "components": "^0.1.0",
+    "typescript": "^4.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
